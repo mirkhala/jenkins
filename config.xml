@@ -1,0 +1,121 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>2.107.1</version>
+  <installState>
+    <isSetupComplete>true</isSetupComplete>
+    <name>RUNNING</name>
+  </installState>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
+    <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>true</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name></name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.JDKInstaller>
+              <id>jdk-10-oth-JPR</id>
+              <acceptLicense>false</acceptLicense>
+            </hudson.tools.JDKInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.39">
+      <name>ec2-us-east-2</name>
+      <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
+      <credentialsId>9ea0c8e8-637c-40cc-a743-12f5a7f4f60f</credentialsId>
+      <privateKey>
+        <privateKey>{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}</privateKey>
+      </privateKey>
+      <instanceCap>2147483647</instanceCap>
+      <templates>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-0c61509b4ca8ccc9d</ami>
+          <description>Linux-Slave</description>
+          <zone></zone>
+          <securityGroups>launch-wizard-1</securityGroups>
+          <remoteFS>/home/ec2-user</remoteFS>
+          <type>T2Micro</type>
+          <ebsOptimized>false</ebsOptimized>
+          <labels>api_builder</labels>
+          <mode>NORMAL</mode>
+          <initScript></initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors>2</numExecutors>
+          <remoteAdmin>ec2-user</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId></subnetId>
+          <idleTerminationMinutes>30</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <deleteRootOnTermination>false</deleteRootOnTermination>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>true</stopOnTerminate>
+          <tags>
+            <hudson.plugins.ec2.EC2Tag>
+              <name>Name</name>
+              <value>jenkins-slave</value>
+            </hudson.plugins.ec2.EC2Tag>
+          </tags>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>false</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.UnixData">
+            <rootCommandPrefix></rootCommandPrefix>
+            <slaveCommandPrefix></slaveCommandPrefix>
+            <sshPort>22</sshPort>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+          <connectBySSHProcess>false</connectBySSHProcess>
+          <connectUsingPublicIp>false</connectUsingPublicIp>
+        </hudson.plugins.ec2.SlaveTemplate>
+      </templates>
+      <region>us-east-2</region>
+    </hudson.plugins.ec2.EC2Cloud>
+  </clouds>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <disabledAgentProtocols>
+    <string>JNLP-connect</string>
+    <string>JNLP2-connect</string>
+  </disabledAgentProtocols>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>
